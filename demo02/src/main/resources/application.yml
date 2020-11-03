@@ -1,0 +1,23 @@
+spring:
+  #数据库连接配置
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/demo
+#    username: root
+#    password: root
+  datasource:
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+    url: jdbc:db2://localhost:50000/sample
+    username: db2admin
+    password: db2admin
+  jpa:
+      ddl-auto: update
+      show-sql: true
+  #mybatis的相关配置
+#mybatis:
+#  #mapper配置文件
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.example.demo02.model
+  #开启驼峰命名
+#  configuration:
+#    map-underscore-to-camel-case: true
